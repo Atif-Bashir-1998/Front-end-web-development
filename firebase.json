@@ -1,0 +1,10 @@
+{
+  "hosting": {
+    "public": "Cafe 301 folder",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}
