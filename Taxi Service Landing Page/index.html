@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Landing Page</title>
+    <link rel="shortcut icon" type="image/png" href="/icon.png" />
+    <link rel="stylesheet" href="/styling.css" />
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/jquery-ui/jquery-ui.css" />
+
+    <script src="/jquery-3.4.1.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/jquery-ui/jquery-ui.js"></script>
+  </head>
+
+  <body>
+
+    <!--Top most section is here which will have the form and -->
+    <div class="container">
+
+      <!--This div will hold the background image-->
+      <div class="img-area"></div>
+
+      <!--Here I have the navigation bar-->
+      <div class="text-area">
+        <nav
+          class="container d-flex flex-row justify-content-around align-items-center"
+        >
+          <div
+            class="d-flex flex-row justify-content-around align-items-center w-50"
+          >
+            <img src="/logo.png" class="logo nav-item" />
+            <a class="nav-item text-light" href="#form">Booking</a>
+            <a class="nav-item text-light" href="#help">Help</a>
+            <a class="nav-item text-light" href="#contact-us">Contact Us</a>
+          </div>
+
+          <div class="d-flex justify-content-center">
+            <button class="btn btn-lg btn-warning">
+              <select class="nav-item" style="border: none; background: none;" id="select">
+                <option>English</option>
+                <option>Russian</option>
+                <option>German</option>
+                <option>Urdu</option>
+              </select>
+            </button>
+          </div>
+
+          <div class="d-flex w-25 justify-content-end justify-content-around">
+            <button class="btn btn-lg btn-success" type="button" data-toggle="modal" data-target="#signInModal">Sign In</button>
+            <button class="btn btn-lg btn-primary" type="button" data-toggle="modal" data-target="#signUpModal">Sign Up</button>
+          </div>
+        </nav>
+      </div>
+
+      <!--I have written the code for all Modals on the page here so that I don't have to keep looking for Modal code in the whole code-->
+
+      <!--Code for Sign In Modal-->
+      <div class="modal fade" id="signInModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Sign In</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <form>
+                  <div class="form-group">
+                    <label for="recipient-name" class="col-form-label">Username:</label>
+                    <input type="text" class="form-control" id="recipient-name">
+                  </div>
+                  <div class="form-group">
+                    <label for="message-text" class="col-form-label">Password:</label>
+                    <input class="form-control" id="message-text" type="password"></input>
+                  </div>
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                <button type="button" class="btn btn-primary">Sign In</button>
+              </div>
+            </div>
+          </div>
+
+      </div>
+
+      <!--Code for Sign Up Modal-->
+      <div class="modal fade" id="signUpModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Sign Up</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="form-group">
+                  <label for="recipient-name" class="col-form-label">Name:</label>
+                  <input type="text" class="form-control" id="recipient-name" placeholder="Your full name">
+                </div>
+
+                <div class="form-group">
+                    <label for="recipient-name" class="col-form-label">Username:</label>
+                    <input type="text" class="form-control" id="recipient-name" placeholder="Username for your ID">
+                </div>
+
+                <div class="form-group">
+                    <label for="recipient-name" class="col-form-label">Email:</label>
+                    <input type="email" class="form-control" id="recipient-name">
+                </div>
+
+                <div class="form-group">
+                    <label for="recipient-name" class="col-form-label">Phone Number:</label>
+                    <input type="text" class="form-control" id="recipient-name">
+                </div>
+
+                <div class="form-group">
+                    <label for="message-text" class="col-form-label">Password:</label>
+                    <input class="form-control" id="message-text" type="password"></input>
+                </div>
+
+                <div class="form-group">
+                    <label for="message-text" class="col-form-label">Confirm Password:</label>
+                    <input class="form-control" id="message-text" type="password" placeholder="Re-enter your password"></input>
+                </div>
+
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+              <button type="button" class="btn btn-primary">Sign Up</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!--Code for Modal of 'Terms and Conditions'-->
+      <div class="modal fade" id="termsAndConditions" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h3 class="modal-title" id="exampleModalLabel">Terms & Conditions</h3>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <p>Welcome to our website. If you continue to browse and use this website, you are agreeing to comply with and be bound by the following terms and conditions of use, which together with our privacy policy govern [business name]’s relationship with you in relation to this website. If you disagree with any part of these terms and conditions, please do not use our website.
+                The term ‘[business name]’ or ‘us’ or ‘we’ refers to the owner of the website whose registered office is [address]. Our company registration number is [company registration number and place of registration]. The term ‘you’ refers to the user or viewer of our website.
+                The use of this website is subject to the following terms of use:
+                The content of the pages of this website is for your general information and use only. It is subject to change without notice.:
+                This website uses cookies to monitor browsing preferences. If you do allow cookies to be used, the following personal information may be stored by us for use by third parties: [insert list of information].
+                Neither we nor any third parties provide any warranty or guarantee as to the accuracy, timeliness, performance, completeness or suitability of the information and materials found or offered on this website for any particular purpose. You acknowledge that such information and materials may contain inaccuracies or errors and we expressly exclud
+                  liability for any such inaccuracies or errors to the fullest extent permitted by law.
+                Your use of any information or materials on this website is entirely at your own risk, for which we shall not be liable. It shall be your own responsibility
+                to ensure that any products, services or information available through this website meet your specific requirements
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!--Code for Modal of 'Provacy Policy'-->
+      <div class="modal fade" id="privacyPolicy" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h3 class="modal-title" id="exampleModalLabel">Privacy Policy</h3>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <p>
+                We may use such information in the following ways:
+                To personalize user's experience and to allow us to deliver the type of content and product offerings in which you are most interested.
+                To improve our website in order to better serve you.
+                To allow us to better service you in responding to your customer service requests.
+                To administer a contest, promotion, survey or other site feature.
+                To quickly process your transactions.
+                To send periodic emails regarding your order or other products and services.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+    <!--Text and form on the top of the image is in this container-->
+      <div class="container">
+        <h2 class="text-center page-1-text">
+          Book low cost airport transfer<br />with fixed price and
+          <a style="text-decoration: underline;" class="link">save up to 45%</a>
+        </h2>
+      </div>
+
+      <div class="container d-flex flex-row justify-content-around" id="form">
+        <!--Left side of the form-->
+        <div class="w-50">
+          <h3 class="page-1-text">From Airport</h3>
+          <p>Pick-up location <img src="/question.png" class="icon" /></p>
+          <input
+            type="text"
+            placeholder="Search for an airport"
+            class="form-control w-75"
+          />
+
+          <div class="d-flex flex-row">
+            <span class="d-flex flex-column">
+              <p>Arrival date and time</p>
+              <span class="d-flex flex-row">
+                <input
+                class="form-control w-50"
+                id="date1"
+                placeholder="Date of Arrival"
+              />
+              <input class="form-control w-25" type="time" />
+              </span>
+
+            </span>
+  
+            <span class="d-flex flex-column">
+              <p>Passengers</p>
+              <input type="number" class="form-control w-50" />
+            </span>
+          </div>
+
+          <!--Book Round Trip Section-->
+          <div>
+            <span class="d-flex align-items-center">
+              <p>
+                <input type="checkbox" /> Book a round trip
+                <img src="/question.png" class="icon" />
+              </p>
+            </span>
+            <span class="d-flex flex-row">
+              <div class="d-flex">
+                <input
+                  class="form-control w-50"
+                  id="date2"
+                  placeholder="Date of Arrival"
+                />
+                <input class="form-control w-50" type="time" />
+              </div>
+            </span>
+          </div>
+        </div>
+
+        <!--Right side of the form-->
+
+        <div class="w-50">
+          <h3 class="page-1-text">To Airport</h3>
+          <p>Drop-off location <img src="/question.png" class="icon" /></p>
+          <input
+            type="text"
+            placeholder="Hotel name or full address"
+            class="form-control w-75"
+          />
+          <p>
+            Hint about full address with an extensive fleet of vehicles<br />
+            and experienced professional drivers provides you low-cost
+          </p>
+          <a class="link"
+            ><img src="/jquery-ui/images/icon-location.jpg" class="icon" />
+            Choose drop-off location on map</a
+          >
+
+          <!--Fields are required-->
+
+          <div class="d-flex justify-content-around">
+            <p class="d-flex align-items-center">
+              <img src="/jquery-ui/images/xclam.png" class="icon" /> All fields
+              are required
+            </p>
+            <button class="btn btn-lg btn-primary">Calculate Price</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Second section of page will be starting from here until the 'Destination' Section-->
+    <div class="section-2 text-center bg-light">
+      <h2 class="text-primary">Why Airport Taxis?</h2>
+      <p>
+        Airport Taxis with an extensive fleet of vehicles and experienced<br />
+        professional drivers provide you low-cost airport transfer
+      </p>
+
+        <!--Small container telling why Airport taxis-->
+        <span class="d-flex justify-content-around">
+          <figure>
+            <img src="/jquery-ui/images/low-cost-icon.jpg" class="banner" />
+            <figcaption>We grantee most<br />low cost prices</figcaption>
+          </figure>
+
+          <figure>
+            <img src="/jquery-ui/images/award-icon.png" class="banner" />
+            <figcaption>Price per vehicle<br />not per person</figcaption>
+          </figure>
+
+          <figure>
+            <img src="/jquery-ui/images/bag-icon.png" class="banner" />
+            <figcaption>Private door-to-door<br />taxi service</figcaption>
+          </figure>
+
+          <figure>
+            <img src="/jquery-ui/images/driver-icon.png" class="banner" />
+            <figcaption>Professional drivers<br />with experience</figcaption>
+          </figure>
+
+          <figure>
+            <img src="/jquery-ui/images/star-icon.jpg" class="banner" />
+            <figcaption>Comfortable luxury<br />vehicles</figcaption>
+          </figure>
+        </span>
+
+        <a class="btn btn-lg btn-primary text-center" href="#form">
+          Book Transfer Now
+        </a>
+
+
+        <!--Pricing plan section will be below it-->
+        <div class="container" id="pricingPlans">
+          <div class="heading">
+            <h2 class="text-primary">Pricing plans</h2>
+            <p><b>10% discount</b> when ordering from 200$</p>
+          </div>
+          
+
+
+          <!--Cards are here-->
+          <div class="container text-center" id="help">
+
+            <!--Cards will be down here-->
+            <span class="container d-flex flex-row justify-content-around">
+
+              <!--Card 1-->
+              <div class="d-flex flex-row">
+                <div class="card" style="width: 25em;">
+                  <img
+                    class="card-img-top"
+                    src="/jquery-ui/images/taxi-4.png"
+                    alt="Card image cap"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Luxury</h5>
+                    <p class="card-text">
+                      <p class="text-primary">Hunday Solaris, Toyota Prius,<br>Ford Crown Victoria</p>
+                      <ul>
+                        <li>4 passengers</li>
+                        <li>2 medium luggage</li>
+                        <li>2 small luggage</li>
+                      </ul>
+                    </p>
+                    <a href="#form" class="btn btn-primary">Go somewhere</a>
+                  </div>
+                </div>
+              </div>
+
+              <!--Card 2-->
+              <div class="d-flex flex-row">
+                <div class="card" style="width: 25em;">
+                  <img
+                    class="card-img-top"
+                    src="/jquery-ui/images/taxi-2.jpg"
+                    alt="Card image cap"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Minibus A</h5>
+                    <p class="card-text">
+                      <p class="text-primary">Hunday Solaris, Toyota Prius,<br>Ford Crown Victoria</p>
+                      <ul>
+                        <li>10 passengers</li>
+                        <li>12 medium luggage</li>
+                        <li>18 small luggage</li>
+                      </ul>
+                    </p>
+                    <a href="#form" class="btn btn-primary">Go somewhere</a>
+                  </div>
+                </div>
+              </div>
+            </span>
+
+
+            <span class="container d-flex flex-row justify-content-around">
+              <!--Cards 3-->
+              <div class="d-flex flex-row">
+                <div class="card" style="width: 25em;">
+                  <img
+                    class="card-img-top"
+                    src="/jquery-ui/images/taxi-1.jpg"
+                    alt="Card image cap"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Saloon</h5>
+                    <p class="card-text">
+                      <p class="text-primary">Hunday Solaris, Toyota Prius,<br>Ford Crown Victoria</p>
+                      <ul>
+                        <li>4 passengers</li>
+                        <li>2 medium luggage</li>
+                        <li>2 small luggage</li>
+                      </ul>
+                    </p>
+                    <a href="#form" class="btn btn-primary">Go somewhere</a>
+                  </div>
+                </div>
+              </div>
+
+              <!--Card 4-->
+              <div class="d-flex flex-row">
+                <div class="card" style="width: 25em;">
+                  <img
+                    class="card-img-top"
+                    src="/jquery-ui/images/taxi-3.jpg"
+                    alt="Card image cap"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Minibus C</h5>
+                    <p class="card-text">
+                      <p class="text-primary">Hunday Solaris, Toyota Prius,<br>Ford Crown Victoria</p>
+                      <ul>
+                        <li>8 passengers</li>
+                        <li>10 medium luggage</li>
+                        <li>16 small luggage</li>
+                      </ul>
+                    </p>
+                    <a href="#form" class="btn btn-primary">Go somewhere</a>
+                  </div>
+                </div>
+              </div>
+            </span>
+
+          </div>
+
+        </div>
+
+        <!--Reviews section is going to fit here-->
+        <div class="container" id="reviews">
+          <h2 class="text-primary">Reviews</h2>
+          <p>More than 100K clients. Become one<br>of our satisfied client</p>
+
+          <!--Three client review cards are below-->
+          <div class="d-flex justify-content-around ">
+            <div class="card" style="width: 18rem;">
+              <div class="card-body">
+                <img src="/jquery-ui/images/male-user.png" class="card-title rating">
+                <img src="/jquery-ui/images/rating.png" class="card-subtitle mb-2 text-muted rating">
+                <p class="card-text font-italic">My daughter and I and my partner need regular taxi from Talagang Airport to Fateh jang.
+                  In january 2015 when we found that the airport Shuttle from Talagang to Fateh Jang has stopped running.
+                  My partner discovered Airport-Taxis and can not praise or recommend this company too highly. A 5 star+ service.
+                </p>
+                <a href="#" class="card-link">Alex Gujjar</a>
+                <a href="#" class="card-link">View ID</a>
+              </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+              <div class="card-body">
+                <img src="/jquery-ui/images/female-user.png" class="card-title rating">
+                <img src="/jquery-ui/images/rating.png" class="card-subtitle mb-2 text-muted rating">
+                <p class="card-text font-italic">
+                  t is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 
+                  'Content here, content here', making it look like readable English. Many desktop publishing packages and.
+                </p>
+                <a href="#" class="card-link">Nida Yasir</a>
+                <a href="#" class="card-link">View ID</a>
+              </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+              <div class="card-body">
+                <img src="/jquery-ui/images/male-user.png" class="card-title rating">
+                <img src="/jquery-ui/images/rating.png" class="card-subtitle mb-2 text-muted rating">
+                <p class="card-text font-italic">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                  aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                    dolor in reprehenderit in voluptate velit.
+                  Excepteur sint occaecat cupidatat nonborum."
+                </p>
+                <a href="#" class="card-link">Aslam Khanna</a>
+                <a href="#" class="card-link">View ID</a>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="container" style="padding-top: 2%; margin-top: 2%;">
+            <a class="btn btn-lg btn-primary text-center" href="#form">
+              Book Transfer Now
+            </a>
+          </div>
+          
+        </div>
+
+      
+
+      <!--Here will be the carousel for luxury cars-->
+      <div id="lux-vehicle">
+        <h2 class="text-primary">Our Luxury Vehicles</h2>
+        <div class="container" id="gallery">
+          <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="d-block w-100" src="/jquery-ui/images/lux-10.jpg" alt="First slide">
+                <div class="carousel-caption d-none d-md-block disc">
+                  <h5>2019 Honda Civic</h5>
+                  <span class="d-flex justify-content-around text-center">
+                      <div>
+                        <a class="btn btn-primary" href="#form">Book Transfer Now</a>
+                      </div>
+                    
+                  </span>
+                </div>
+              </div>
+  
+              <div class="carousel-item">
+                <img class="d-block w-100" src="/jquery-ui/images/lux-2.jpg" alt="Second slide">
+                <div class="carousel-caption d-none d-md-block disc">
+                  <h5>2020 Toyota Camry XLE</h5>
+                  <span class="d-flex justify-content-around text-center">
+                     
+                      <div>
+                        <a class="btn btn-primary" href="#form">Book Transfer Now</a>
+                      </div>
+                    
+                  </span>
+                </div>
+              </div>
+  
+              <div class="carousel-item">
+                <img class="d-block w-100" src="/jquery-ui/images/lux-3.jpeg" alt="Third slide">
+                <div class="carousel-caption d-none d-md-block disc">
+                  <h5>2018 AUDI A8</h5>
+                  <span class="d-flex justify-content-around text-center">
+                    <div>
+                      <div>
+                        <a class="btn btn-primary" href="#form">Book Transfer Now</a>
+                      </div>
+                    
+                  </span>
+                </div>
+              </div>
+  
+  
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+      </div>
+            
+
+      <!--Contact Us and the google map will be here-->
+      <div class="d-flex justify-content-between" id="contact-us">
+
+        <!--Contact Us section-->
+        <div class="w-50">
+          <h2 class="text-primary">Contact Us</h2>
+          <h5>Airport Taxis with an extensive fleet of vehicles and experienced professional drivers
+          provide you low-cost airport transfers</h5>
+          <p>The carrier knows beforehand when you arrive at the airport: the taxi will already
+          be waiting for you at the taxi rank, and the taxi driver will meet you as close to the
+          arrivals area as the airport rules allow. The same applies to transfers from train stations
+          and hotels: the driver will be waiting for you at the specified place, holding
+          a sign with a client's name on it - this is a standard of our service. It is possible to
+          order a local taxi to the airport cheaply (taxi rates are normally lower than transfer
+          prices), but you will have to wait for the taxi cab and then look for it, which may
+          take 10-15 minutes more than in case of a pre-booking.</p>
+        </div>
+
+        <!--Map which will be loaded from Google Map API-->
+        <div id="map" class="w-50"></div>
+      </div>
+      
+    </div>      <!--This is the end of the whole div tag which is before Destionation section-->
+    
+
+          <!--Top Destinations portion is here-->
+          <div class="top-destination">
+            <div class="container text-light" style="padding-bottom: 5%; padding-left: 10%;">
+              <h2 class="container text-light text-center title">Top Destinations</h2>
+              <div class="container">
+                  <span class="d-flex flex-row justify-content-around text-left">
+                      <p class="col-sm-2"><img src="/jquery-ui/images/nav-icon.png" class="icon-lg"> Zaventem</p>
+                      <p class="col-sm-3"><img src="/jquery-ui/images/home-icon.png" class="icon-lg"> Antwerp</p>
+                      <p class="col-sm-3"><img src="/jquery-ui/images/home-icon.png" class="icon-lg"> Brasschaat</p>
+                      <p class="col-sm-3"><img src="/jquery-ui/images/home-icon.png" class="icon-lg"> Eeklo</p>
+                      <p class="col-sm-3"><img src="/jquery-ui/images/home-icon.png" class="icon-lg"> Tervuren</p>
+                  </span>
+      
+                  <span class="d-flex flex-row justify-content-around text-left">
+                      <p class="col-sm-2"><img src="/jquery-ui/images/nav-icon.png" class="icon-lg"> Charleroi</p>
+                      <p class="col-sm-3"><img src="/jquery-ui/images/home-icon.png" class="icon-lg"> Brussels</p>
+                      <p class="col-sm-3"><img src="/jquery-ui/images/home-icon.png" class="icon-lg"> Tienen</p>
+                      <p class="col-sm-3"><img src="/jquery-ui/images/home-icon.png" class="icon-lg"> Deinze</p>
+                      <p class="col-sm-3"><img src="/jquery-ui/images/home-icon.png" class="icon-lg"> Roosdaal</p>
+                  </span>
+      
+                  <span class="d-flex flex-row justify-content-around text-left">
+                      <p class="col-sm-2"><img src="/jquery-ui/images/nav-icon.png" class="icon-lg"> Antwerp</p>
+                      <p class="col-sm-3"><img src="/jquery-ui/images/home-icon.png" class="icon-lg"> Leuven</p>
+                      <p class="col-sm-3"><img src="/jquery-ui/images/home-icon.png" class="icon-lg"> Kapellen</p>
+                      <p class="col-sm-3"><img src="/jquery-ui/images/home-icon.png" class="icon-lg"> Geraardsbergen</p>
+                      <p class="col-sm-3"><img src="/jquery-ui/images/home-icon.png" class="icon-lg"> Tremelo</p>
+                  </span>
+      
+                  <span class="d-flex flex-row justify-content-around text-left">
+                      <p class="col-sm-2"><img src="/jquery-ui/images/nav-icon.png" class="icon-lg"> Liege</p>
+                      <p class="col-sm-3"><img src="/jquery-ui/images/home-icon.png" class="icon-lg"> Mechelen</p>
+                      <p class="col-sm-3"><img src="/jquery-ui/images/home-icon.png" class="icon-lg"> Vilvoorde</p>
+                      <p class="col-sm-3"><img src="/jquery-ui/images/home-icon.png" class="icon-lg"> Oudenaarde</p>
+                      <p class="col-sm-3"><img src="/jquery-ui/images/home-icon.png" class="icon-lg"> Pepingen</p>
+                  </span>
+      
+                  <span class="d-flex flex-row justify-content-around text-left">
+                      <p class="col-sm-2"><img src="/jquery-ui/images/nav-icon.png" class="icon-lg"> Oostende</p>
+                      <p class="col-sm-3"><img src="/jquery-ui/images/home-icon.png" class="icon-lg"> Ghent</p>
+                      <p class="col-sm-3"><img src="/jquery-ui/images/home-icon.png" class="icon-lg"> Halle</p>
+                      <p class="col-sm-3"><img src="/jquery-ui/images/home-icon.png" class="icon-lg"> Sint-Niklaas</p>
+                      <p class="col-sm-3"><img src="/jquery-ui/images/home-icon.png" class="icon-lg"> Sint-Pieters-Leeuw</p>
+                  </span>
+      
+                  <span class="d-flex flex-row justify-content-around text-left">
+                      <p class="col-sm-2"><img src="/jquery-ui/images/nav-icon.png" class="icon-lg"> Lille</p>
+                      <p class="col-sm-3"><img src="/jquery-ui/images/home-icon.png" class="icon-lg"> Bruges</p>
+                      <p class="col-sm-3"><img src="/jquery-ui/images/home-icon.png" class="icon-lg"> Diest</p>
+                      <p class="col-sm-3"><img src="/jquery-ui/images/home-icon.png" class="icon-lg"> Machelen</p>
+                      <p class="col-sm-3"><img src="/jquery-ui/images/home-icon.png" class="icon-lg"> Rotselaar</p>
+                  </span>
+      
+                  <span class="d-flex flex-row justify-content-around text-left">
+                      <p class="col-sm-2"><img src="/jquery-ui/images/nav-icon.png" class="icon-lg"> Paris</p>
+                      <p class="col-sm-3"><img src="/jquery-ui/images/home-icon.png" class="icon-lg"> Antwerp</p>
+                      <p class="col-sm-3"><img src="/jquery-ui/images/home-icon.png" class="icon-lg"> Brasschaat</p>
+                      <p class="col-sm-3"><img src="/jquery-ui/images/home-icon.png" class="icon-lg"> Eeklo</p>
+                      <p class="col-sm-3"><img src="/jquery-ui/images/home-icon.png" class="icon-lg"> Tervuren</p>
+                  </span>
+      
+                  <span class="d-flex flex-row justify-content-around text-left">
+                      <p class="col-sm-2"><img src="/jquery-ui/images/nav-icon.png" class="icon-lg"> Schiphol</p>
+                      <p class="col-sm-3"><img src="/jquery-ui/images/home-icon.png" class="icon-lg"> Oostende</p>
+                      <p class="col-sm-3"><img src="/jquery-ui/images/home-icon.png" class="icon-lg"> Aarschot</p>
+                      <p class="col-sm-3"><img src="/jquery-ui/images/home-icon.png" class="icon-lg"> Merchtem</p>
+                      <p class="col-sm-3"><img src="/jquery-ui/images/home-icon.png" class="icon-lg"> Ternat</p>
+                  </span>
+      
+                  <span class="d-flex flex-row justify-content-around text-left">
+                      <p class="col-sm-2"><img src="/jquery-ui/images/nav-icon.png" class="icon-lg"> Eindhoven</p>
+                      <p class="col-sm-3"><img src="/jquery-ui/images/home-icon.png" class="icon-lg"> Aalst</p>
+                      <p class="col-sm-3"><img src="/jquery-ui/images/home-icon.png" class="icon-lg"> Boom</p>
+                      <p class="col-sm-3"><img src="/jquery-ui/images/home-icon.png" class="icon-lg"> Opwijk</p>
+                      <p class="col-sm-3"><img src="/jquery-ui/images/home-icon.png" class="icon-lg"> Tielt-Winge</p>
+                  </span>
+      
+                  <span class="d-flex flex-row justify-content-around text-left">
+                      <p class="col-sm-2"><img src="/jquery-ui/images/nav-icon.png" class="icon-lg"> Cologne</p>
+                      <p class="col-sm-3"><img src="/jquery-ui/images/home-icon.png" class="icon-lg"> Hasselt</p>
+                      <p class="col-sm-3"><img src="/jquery-ui/images/home-icon.png" class="icon-lg"> Lier</p>
+                      <p class="col-sm-3"><img src="/jquery-ui/images/home-icon.png" class="icon-lg"> Oud-Heverlee</p>
+                      <p class="col-sm-3"><img src="/jquery-ui/images/home-icon.png" class="icon-lg"> Wermmel</p>
+                  </span>
+      
+                  <span class="d-flex flex-row justify-content-around text-left">
+                      <p class="col-sm-2"><img src="/jquery-ui/images/nav-icon.png" class="icon-lg"> Dusseldrof</p>
+                      <p class="col-sm-3"><img src="/jquery-ui/images/home-icon.png" class="icon-lg"> Sint-Martens-Latem</p>
+                      <p class="col-sm-3"><img src="/jquery-ui/images/home-icon.png" class="icon-lg"> Turnhout</p>
+                      <p class="col-sm-3"><img src="/jquery-ui/images/home-icon.png" class="icon-lg"> Overijse</p>
+                      <p class="col-sm-3"><img src="/jquery-ui/images/home-icon.png" class="icon-lg"> Zemst</p>
+                  </span>
+      
+              </div>
+            </div>
+
+            <!--Footer section having several links-->
+            <div class="container text-light" id="footerPanel">
+              <span class="d-flex justify-content-around container">
+                <a href="#help" style="text-decoration: none;" class="btn btn-sm">Prices</a>
+                <a href="#reviews" style="text-decoration: none;" class="btn btn-sm">Client Panel</a>
+                <a href="#gallery" style="text-decoration: none;" class="btn btn-sm">Luxury Cars</a>
+                <a type="button" data-toggle="modal" data-target="#termsAndConditions" class="btn btn-sm">Terms and Conditions</a>
+                <a type="button" data-toggle="modal" data-target="#privacyPolicy" class="btn btn-sm">Privacy Policy</a>
+                <a href="#contact-us" style="text-decoration: none;" class="btn btn-sm">Contact Us</a>
+              </span>
+
+
+              <!--Paying methods section here-->
+              <span class="d-flex justify-content-between text-center w-75 container">
+                <img src="/jquery-ui/images/paypal.png" class="payment footer-item">
+                <img src="/jquery-ui/images/amex.png" class="payment footer-item">
+                <img src="/jquery-ui/images/discover.png" class="payment footer-item">
+                <img src="/jquery-ui/images/visa.jpg" class="payment footer-item">
+              </span>
+
+
+              <!--Copyright section-->
+              <div>
+                <p>Airport taxis provide low cost airport transfers since 2015 &copy; 2020</p>
+                <p>All Rights Reserved</p>
+              </div>
+
+            </div>
+          </div>
+
+
+
+
+    <!--connecting the script to the html file-->
+    <script src="/code.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC2vwp8dNlYIocvO4pWqmiYnY9l8CHWkPc&callback=initMap" async defer></script>
+  </body>
+</html>
+
