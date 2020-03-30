@@ -1,0 +1,48 @@
+.glow {
+    font-size: 69px;
+    color: rgb(50, 109, 197);
+    text-align: center;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+  }
+  
+  @-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #b6aeb2, 0 0 40px #4b8ca0, 0 0 50px #628ba7, 0 0 60px #2a97ca, 0 0 70px #08afe2;
+    }
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #437ab9, 0 0 40px #3a83c7, 0 0 50px #43acf1, 0 0 60px #429dd1, 0 0 70px #2e8edd, 0 0 80px #0f69f1;
+    }
+  }
+
+  .heading {
+    font-family: 'Titan One', cursive;
+  }
+
+.logo-image {
+    width: 300px;
+    height: auto
+}
+
+.item {
+    font-family: 'Exo 2', sans-serif;
+    font-size: 1.2rem;
+    padding-top: 13%;
+    widows: 100px;
+    margin-bottom: 10px;
+}
+
+.item:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+.navigation {
+    width: 100%
+}
+
+.html{
+    color: black
+}
