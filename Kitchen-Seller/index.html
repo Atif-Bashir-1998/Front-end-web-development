@@ -4,11 +4,12 @@
 <head>
   <link rel="shortcut icon" type="image/png" href="/images/img_243357.png" />
   <link rel="stylesheet" href="/style.css">
-  <link href="https://fonts.googleapis.com/css?family=Arvo|Lobster&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Arvo|Lobster|Rajdhani|Righteous&display=swap" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
   <link href="https://fonts.googleapis.com/css?family=Titan+One&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Exo+2|Titan+One&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -31,12 +32,12 @@
     <!--This is the div containing the navbar and the symbol-->
     <div class="continer d-flex">
       <div>
-        <img src="/images/logo.png" class="logo-image animated fadeInLeft" id="logo">
+        <img src="/images/logo-003.jpg" class="logo-image animated fadeInLeft" id="logo">
       </div>
 
       <!--Nav bar will be here-->
       <div class="navbar-grid container">
-        <p class="item animated fadeInDown">Bespoke Kitchens</p>
+        <p class="item animated fadeInDown">A1 Kitchens</p>
         <p class="item animated fadeInDown">About Us</p>
         <p class="item animated fadeInDown">Kitchen Range</p>
         <p class="item animated fadeInDown">Our Installations</p>
@@ -54,7 +55,7 @@
 
       <div class="container animated fadeInRight">
         <button class="btn btn-lg btn-warning">Book My Kitchen Design</button>
-        <button class="btn btn-lg btn-primary">0123456789</button>
+        <button class="btn btn-lg btn-primary animated bounceIn">0123456789</button>
       </div>
     </div>
 
@@ -91,29 +92,205 @@
         cum? Soluta magni fugit expedita?</p>
     </div>
   </div>
+  <img class="button" src="/images/up-icon.png">
   <!--Section 2 has ended now-->
 
   <!--Section 3 having 3 columns will start from here-->
   <div class="container section-3-grid">
     <!--Column 1 containing Our Products-->
-    <div>
+    <div class="column-1-grid">
+      <header>Our Products</header>
+      <!--Carousel for OUR PRODUCTS-->
+      <div id="carousel-1" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-100" src="/images/our-product-1.jpg" alt="First slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="/images/our-product-2.jpg" alt="Second slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="/images/our-product-3.jpg" alt="Third slide">
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carousel-1" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carousel-1" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+
+      <!--here are the paragraphs below the carousel-->
+      <div class="grid-below-car-1 container">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae repellendus soluta esse aspernatur iste
+          ex!</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit corrupti doloremque illum quidem quasi
+          ullam delectus tempore vitae eligendi excepturi, ratione dicta sapiente cupiditate possimus tenetur.
+          Architecto at magnam error labore facilis eaque voluptatibus tempora fugit sed provident corrupti, vero porro
+          harum et maiores natus quod. Nobis aut iusto ipsam, quae sed amet optio eaque, dolorum voluptatum officiis eum
+          sint? Rem incidunt veritatis sint odio quia nihil magnam laboriosam atque possimus ad. Placeat nesciunt illum
+          quas. Harum temporibus eos dignissimos quas, cumque voluptates voluptatum aut at iure tempora animi distinctio
+          nesciunt a quo nihil doloremque sequi quod autem quia omnis.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat nisi magnam illum officia ad voluptate
+          consectetur ab. Ipsum consectetur dicta similique, perspiciatis perferendis libero, expedita iste culpa,
+          veniam aut autem beatae necessitatibus cum officia sapiente commodi porro molestias mollitia iure?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, ut aut. Nostrum provident, animi quo dolorum
+          libero perspiciatis, dignissimos mollitia adipisci eius fugit nobis sed? Magnam, numquam neque libero saepe
+          voluptas error ullam quis quas nisi sapiente similique nesciunt possimus quod accusamus culpa laudantium amet,
+          magni impedit harum sint consequatur!</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non cupiditate quo fugiat, in tempore qui sed
+          labore laboriosam ullam consequuntur facere magnam aliquid impedit distinctio eius? Consectetur ipsa quas
+          laudantium doloremque? Deleniti, tempora inventore ea illum ab vero, iusto cum eligendi aperiam delectus aut,
+          excepturi modi deserunt numquam qui? Dolorem, dicta assumenda! Eos minus culpa neque beatae, tempore
+          blanditiis natus itaque labore nemo fugiat laborum repellat adipisci fuga voluptates numquam id praesentium
+          laudantium voluptate mollitia pariatur at doloribus. Officia, ipsum!</p>
+      </div>
+
+      <div class="text-center">
+        <button class="btn btn-lg btn-warning">View Our Products</button>
+      </div>
 
     </div>
 
     <!--Column 2 containing News-->
-    <div>
-
+    <div class="container">
+      <header>News Feed</header>
+      <div class="column-2-grid">
+        <div>
+          <h3>Press release in the Lalkurti Times and DAWN</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi ullam earum libero voluptas atque quia
+            nihil, necessitatibus aut? Ipsam commodi eveniet, laborum laboriosam nesciunt totam iusto ducimus sed. Ipsum
+            consequuntur veritatis esse assumenda qui velit quam harum veniam similique eaque dolores cumque, ipsa
+            maxime eius dolore soluta minima accusamus maiores dicta. Voluptatem voluptates ea quaerat sunt, quo
+            perferendis odio. Fuga! . . . <a>Read More</a></p>
+        </div>
+        <hr>
+        <div>
+          <h3>A1 Supports Needy on Defense Road</h3>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, reprehenderit. A recusandae nostrum
+            ratione? Odit, deleniti. Praesentium modi repellat amet fugit, quas dolor expedita rem aliquam neque nam
+            delectus aperiam sequi non voluptatum dolorem ipsum et sapiente corporis consequuntur consectetur, nulla
+            molestias maiores. Adipisci qui nostrum neque consectetur impedit eos, odio nemo illum facilis, pariatur
+            iure quisquam voluptate modi mollitia nesciunt ducimus aliquid? Culpa tempore voluptatum temporibus ab illo
+            sit sint ea sunt, molestiae, porro ratione accusamus autem quisquam. Enim . . . <a>Read More</a></p>
+        </div>
+        <hr>
+        <div>
+          <h3>Our First ever Youtube Video</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id odio et voluptatum nihil itaque obcaecati
+            dolorem vel! Voluptatem est dignissimos qui similique minus placeat dolorem unde, enim corrupti adipisci,
+            sunt consequuntur fuga natus magni hic blanditiis aspernatur veniam exercitationem sequi at nam deleniti.
+            Labore, illum aspernatur architecto rem, quos tenetur recusandae, nemo molestiae possimus pariatur iste
+            soluta libero! Tenetur atque laborum debitis rerum ab id asperiores nesciunt doloremque nobis inventore
+            alias exercitationem earum dolores blanditiis, amet error voluptatem consequatur sapiente iusto. Quaerat
+            voluptatem quia, voluptatibus earum veniam facilis accusantium quis ipsam nihil voluptates nisi ipsa!
+            Numquam dolorem nisi sunt, fugit natus in accusamus blanditiis! Atque eos, dolorem pariatur iure cum
+            inventore iste odio itaque ipsum doloribus veritatis a. Esse, repudiandae! . . . <a>Read More</a></p>
+        </div>
+        <hr>
+        <div>
+          <h3>Future Projects</h3>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti sapiente quam doloremque quia eum,
+            dolorum, unde asperiores eaque nemo aliquam tempora ullam saepe provident voluptatum laborum, ut libero
+            quisquam illum! . . . <a>Read More</a></p>
+        </div>
+      </div>
     </div>
 
     <!--Column 3 containing Our Company-->
+    <div class="column-3-grid">
+      <header>About Our Company</header>
+
+      <!--Carousel for OUR COMPANY-->
+      <div id="carousel-2" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-100" src="/images/our-company-1" alt="First slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="/images/our-company-2.jpg" alt="Second slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="/images/our-company-3.jpg" alt="Third slide">
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carousel-2" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carousel-2" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+
+      <!--here are the paragraphs below the carousel-->
+      <div class="grid-below-car-1 container">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam provident amet, inventore tenetur facere
+          dignissimos. Iste doloremque, quis eos maiores itaque vel ratione obcaecati nostrum alias cupiditate quod
+          molestiae ipsum.</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia illum facere iusto asperiores qui blanditiis
+          in doloribus deserunt, aperiam dicta sed itaque dolore beatae harum amet tempore. Veritatis aliquid corrupti
+          eligendi culpa harum dolores optio recusandae aperiam nisi. Eius ducimus est pariatur veritatis sequi culpa
+          earum qui? Doloribus, magnam, eaque dolore, magni tempore quod earum quo veritatis voluptatem dolor dolores ut
+          accusamus maxime laborum dignissimos sunt exercitationem delectus ipsa. Sequi?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur deserunt ad nobis ut unde, consequatur
+          tempore repudiandae neque sunt laudantium cupiditate provident molestias est soluta. Necessitatibus delectus
+          aut numquam animi!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis ipsum ducimus autem provident sunt eligendi
+          ad ea aspernatur? Suscipit alias blanditiis saepe quos vero commodi maxime tenetur magni quam dolore. Illo
+          placeat unde minus. Provident laboriosam neque vero porro iure quaerat animi eaque illum, mollitia
+          perspiciatis, itaque amet exercitationem quas!</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur nemo ducimus ratione ut perspiciatis
+          fugit similique eius ab quasi doloremque quod et esse illo vero, labore dolore? Voluptatem numquam architecto,
+          quos, amet ipsum explicabo cupiditate vel vero doloremque ipsam voluptas illum pariatur blanditiis. Minus nam
+          sequi quisquam magni dolorum. Odit nam inventore adipisci nisi dolore. Recusandae vitae quos, libero
+          distinctio eligendi obcaecati iste ullam, consequuntur maxime temporibus accusamus! Omnis, velit tempore animi
+          quae nam commodi debitis eos perspiciatis enim voluptas facere quasi ullam nulla dicta, ducimus esse placeat
+          sit laudantium.</p>
+
+      </div>
+
+      <div class="text-center">
+        <button class="btn btn-lg btn-warning">View Our Products</button>
+      </div>
+    </div>
+
+  </div>
+  <!--Section 3 has ended-->
+
+  <!--Here we will have section 4 which has OUR HAPPY COSTUMERS & COPYRIGHT-->
+  <div>
     <div>
 
     </div>
 
+    <footer>
+      <p>&copy;Copyright 2019. A1 Kitchens of Bedford LTD. All Rights Reserved. Atif Bashir</p>
+      <div class="footer-grid">
+        <img type="button" data-toggle="popover" title="Facebook" data-content="www.facebook.com/HA_kitchen_seller"
+          src="/images/facebook-logo.png" class="footer-icon">
+        <img type="button" data-toggle="popover" title="Whatsapp" data-content="0123456789"
+          src="/images/whatsapp-logo.png" class="footer-icon">
+        <img type="button" data-toggle="popover" title="Linkedin" data-content="www.linkedin.com/HA_kitchen_seller"
+          src="/images/linkedin-logo.png" class="footer-icon">
+        <img type="button" data-toggle="popover" title="Redit" data-content="www.redit.com/HA_kitchen_seller"
+          src="/images/redit-logo.png" class="footer-icon">
+        <img type="button" data-toggle="popover" title="GMail" data-content="Write us on adobe8832289@gmail.com"
+          src="/images/gmail-logo.png" class="footer-icon">
+        <img type="button" data-toggle="popover" title="Pinterest" data-content="www.pinterest.com/HA_kitchen_seller"
+          src="/images/pinterest-logo.png" class="footer-icon">
+        <img type="button" data-toggle="popover" title="Mail" data-content="Write us a mail" src="/images/mail-logo.png"
+          class="footer-icon">
+      </div>
+
+    </footer>
   </div>
 
-
-
+  <script src="/code.js"></script>
 
 </body>
 
