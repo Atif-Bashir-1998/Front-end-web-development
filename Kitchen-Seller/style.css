@@ -37,7 +37,7 @@ body {
     font-size: 1.2rem;
     padding-top: 70%;
     padding-bottom: 70%;
-    background-color: rgba(99, 99, 99, 0.2);
+    background-color: rgba(255, 140,00, 0.2);
     widows: 100px;
     font-weight: bold;
     animation-duration: 2s;
@@ -47,7 +47,7 @@ body {
 }
 
 .item:hover{
-    background-color: rgba(33, 33, 33, 0.4);
+    background-color: rgba(255, 140,00, 0.6);
     color: white !important;
     cursor: pointer;
     padding-top: 70%;
@@ -56,7 +56,7 @@ body {
 }
 
 #current-page {
-  background-color: rgba(33, 33, 33, 0.4);
+  background-color: rgba(255, 140,00, 0.6);
 }
 
 .navbar-grid {
@@ -214,20 +214,31 @@ footer {
 
 @media only screen and (max-width: 1345px) {
   .navbar-grid {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(7,0.5fr);
+    grid-area: auto;
+    column-gap: 1%;
+  }
+
+  .logo-image {
+    margin-left: 3%;
+    margin-top: 20%;
+    width: 80%;
   }
 
   .item {
-    height: auto;
-    width: 50%;
-    padding: 5%;
+    padding: 1%;
+    width: 100%;
+    background: none;
   }
 
   .item:hover{
-    padding: 5%;
-    width: 50%;
-    height: auto;
+    background: none;
+  }
+
+  #current-page{
+    width: 100%;
+    background-color: #ff8c00;
   }
 
   .section-1 {
