@@ -3,4 +3,9 @@ $(document).ready(function () {
         placement: 'top',
         trigger: 'hover'
     });
+
+    AOS.init({
+        delay: 500,
+        duration: 2000
+    });
 });

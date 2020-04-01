@@ -5,8 +5,10 @@
   <link rel="shortcut icon" type="image/png" href="/images/img_243357.png" />
   <link rel="stylesheet" href="/style.css">
   <link href="https://fonts.googleapis.com/css?family=Arvo|Lobster|Rajdhani|Righteous&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"
     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
   <link href="https://fonts.googleapis.com/css?family=Titan+One&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Exo+2|Titan+One&display=swap" rel="stylesheet">
@@ -28,7 +30,7 @@
 
 <body>
   <!--The top section having the nav bar and background image-->
-  <div class="section-1">
+  <div class="section-1" id="top">
     <!--This is the div containing the navbar and the symbol-->
     <div class="continer d-flex">
       <div>
@@ -37,7 +39,7 @@
 
       <!--Nav bar will be here-->
       <div class="navbar-grid container">
-        <p class="item animated fadeInDown">A1 Kitchens</p>
+        <p class="item animated fadeInDown" id="current-page">A1 Kitchens</p>
         <p class="item animated fadeInDown">About Us</p>
         <p class="item animated fadeInDown">Kitchen Range</p>
         <p class="item animated fadeInDown">Our Installations</p>
@@ -50,7 +52,7 @@
     <!--Here goes the title of website and the orange button-->
     <div class="d-flex container align-items-center justify-content-end">
       <div>
-        <p class="section-heading animated zoomIn">Kitchen Range</p>
+        <p class="section-heading animated zoomIn">A1 Kitchens</p>
       </div>
 
       <div class="container animated fadeInRight">
@@ -84,7 +86,8 @@
         ullam adipisci repudiandae sint recusandae natus consequuntur eveniet totam numquam in error nulla fugit eum
         magnam veritatis cupiditate animi eius reiciendis officiis, omnis quas. Explicabo modi minus provident quos
         nobis, dolor vitae quidem ullam, rerum odio eaque tempora non.</p>
-      <iframe width="420" height="315" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/BT4tnfo4ej0" frameborder="0"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       <p id="para3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil quasi et enim voluptate ipsa at
         accusamus. Voluptatem, tenetur non nobis fugit nulla fugiat accusantium, sequi est eius ratione porro aliquid!
       </p>
@@ -92,13 +95,13 @@
         cum? Soluta magni fugit expedita?</p>
     </div>
   </div>
-  <img class="button" src="/images/up-icon.png">
+  <a href="#top"><img class="button" src="/images/up-icon.png" id="upBtn"></a>
   <!--Section 2 has ended now-->
 
   <!--Section 3 having 3 columns will start from here-->
   <div class="container section-3-grid">
     <!--Column 1 containing Our Products-->
-    <div class="column-1-grid">
+    <div class="column-1-grid" data-aos="fade-left">
       <header>Our Products</header>
       <!--Carousel for OUR PRODUCTS-->
       <div id="carousel-1" class="carousel slide" data-ride="carousel">
@@ -160,7 +163,7 @@
       <header>News Feed</header>
       <div class="column-2-grid">
         <div>
-          <h3>Press release in the Lalkurti Times and DAWN</h3>
+          <h3 class="news-heading">Press release in the Lalkurti Times and DAWN</h3>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi ullam earum libero voluptas atque quia
             nihil, necessitatibus aut? Ipsam commodi eveniet, laborum laboriosam nesciunt totam iusto ducimus sed. Ipsum
             consequuntur veritatis esse assumenda qui velit quam harum veniam similique eaque dolores cumque, ipsa
@@ -169,7 +172,7 @@
         </div>
         <hr>
         <div>
-          <h3>A1 Supports Needy on Defense Road</h3>
+          <h3 class="news-heading">A1 Supports Needy on Defense Road</h3>
           <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, reprehenderit. A recusandae nostrum
             ratione? Odit, deleniti. Praesentium modi repellat amet fugit, quas dolor expedita rem aliquam neque nam
             delectus aperiam sequi non voluptatum dolorem ipsum et sapiente corporis consequuntur consectetur, nulla
@@ -179,7 +182,7 @@
         </div>
         <hr>
         <div>
-          <h3>Our First ever Youtube Video</h3>
+          <h3 class="news-heading">Our First ever Youtube Video</h3>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id odio et voluptatum nihil itaque obcaecati
             dolorem vel! Voluptatem est dignissimos qui similique minus placeat dolorem unde, enim corrupti adipisci,
             sunt consequuntur fuga natus magni hic blanditiis aspernatur veniam exercitationem sequi at nam deleniti.
@@ -192,8 +195,9 @@
         </div>
         <hr>
         <div>
-          <h3>Future Projects</h3>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti sapiente quam doloremque quia eum,
+          <h3 class="news-heading">Future Projects</h3>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti sapiente quam
+            doloremque quia eum,
             dolorum, unde asperiores eaque nemo aliquam tempora ullam saepe provident voluptatum laborum, ut libero
             quisquam illum! . . . <a>Read More</a></p>
         </div>
@@ -201,7 +205,7 @@
     </div>
 
     <!--Column 3 containing Our Company-->
-    <div class="column-3-grid">
+    <div class="column-3-grid" data-aos="fade-right">
       <header>About Our Company</header>
 
       <!--Carousel for OUR COMPANY-->
@@ -264,10 +268,26 @@
 
   <!--Here we will have section 4 which has OUR HAPPY COSTUMERS & COPYRIGHT-->
   <div>
-    <div>
+    <!--Our Satisfied costumers-->
+    <div class="satisfied-costumers" data-aos="fade-in">
+      <h3>Our Satisfied Customers</h3>
+      <div class="reviews">
+        <div class="review-block container">
+          <img class="client-img" src="/images/female-client.png">
+          <p class="client-review">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae sunt itaque
+            deleniti ipsum fugit? Vel illum ea, doloribus minima fuga natus accusamus, recusandae fugiat nesciunt quas
+            ipsa suscipit mollitia aliquam?</p>
+        </div>
 
+        <div class="review-block container">
+          <img class="client-img" src="/images/male-client.png">
+          <p class="client-review">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae fugiat error
+            vitae aliquid dolorum assumenda, consequuntur obcaecati officiis facilis quidem ipsum pariatur deleniti
+            eligendi inventore quia nihil enim reiciendis tempora ullam totam, nulla praesentium delectus unde?
+            Doloribus sequi dolor neque molestiae illum repellendus.</p>
+        </div>
+      </div>
     </div>
-
     <footer>
       <p>&copy;Copyright 2019. A1 Kitchens of Bedford LTD. All Rights Reserved. Atif Bashir</p>
       <div class="footer-grid">
@@ -288,8 +308,9 @@
       </div>
 
     </footer>
-  </div>
 
+  </div>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script src="/code.js"></script>
 
 </body>
