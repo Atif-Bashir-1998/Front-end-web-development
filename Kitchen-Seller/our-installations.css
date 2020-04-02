@@ -79,6 +79,7 @@ body {
     font-size: 4rem;
     text-shadow: -1px 0 black, 0 4px black, 1px 0 black, 0 -1px black;
     color: white;
+    
   }
 
 
@@ -94,14 +95,15 @@ body {
     display: grid;
     background-color: chocolate;
     grid-template-columns: repeat(3 , 1fr);
-    grid-template-rows: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 1fr);
     width: 100%;
     box-shadow:0 10px black, 10px 0 black;
-    overflow-y: auto;
     column-gap: 3%;
     row-gap: 4%;
     padding: 5% 0;
     border-radius: 15px;
+    height: 100%;
+    overflow-y: hidden;
 }
 
 .kitchen-range-images {
@@ -109,6 +111,51 @@ body {
     height: auto;
     margin-top: 2%;
     padding: 0 2%;
+}
+
+#1 {
+    grid-row: 1;
+    grid-column: 1;
+}
+
+#2 {
+    grid-row: 1;
+    grid-column: 2;
+}
+
+#3 {
+    grid-row: 1;
+    grid-column: 3;
+}
+
+#4 {
+    grid-row: 2;
+    grid-column: 1;
+}
+
+#5 {
+    grid-row: 2;
+    grid-column: 2;
+}
+
+#6{
+    grid-row: 2;
+    grid-column: 3;    
+}
+
+#7{
+    grid-row: 3;
+    grid-column: 1;
+}
+
+#8{
+    grid-row: 3;
+    grid-column: 2;
+}
+
+#9 {
+    grid-row: 3;
+    grid-column: 3;
 }
 
 figure {
@@ -132,6 +179,40 @@ figcaption {
     color: white;
   }
 
+  .testimonial-grid{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: repeat(3, 1fr);
+      column-gap: 2%;
+  }
+
+  .testi-image {
+      width: 100%;
+      padding: 2%;
+  }
+
+  .quote {
+    display: block;
+    font-style: italic;
+    font-weight: bold;
+    font-size: larger;
+    color: black;
+    background-color: darkgray;
+    background-size: auto;
+    text-align: center;
+}
+
+.charity-image-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    overflow: hidden;
+    padding: 3% 10%;
+}
+
+.image {
+    width: 70%;
+}
   /*Footer styling here */
   .footer-icon {
     width: 50px;
