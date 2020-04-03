@@ -29,44 +29,29 @@
 </head>
 
 <body>
-  <!--The top section having the nav bar and background image-->
-  <div class="section-1" id="top">
-    <!--This is the div containing the navbar and the symbol-->
-    <div class="continer d-flex">
-      <div>
-        <img src="/images/logo-003.jpg" class="logo-image animated fadeInLeft" id="logo">
-      </div>
-
-      <!--Nav bar will be here-->
-      <div class="navbar-grid container">
-        <a class="item animated fadeInDown" id="current-page">A1 Kitchens</a>
-        <a class="item animated fadeInDown">About Us</a>
-        <a class="item animated fadeInDown">Kitchen Range</a>
-        <a class="item animated fadeInDown">Our Installations</a>
-        <a class="item animated fadeInDown">Buy My Kitchen</a>
-        <a class="item animated fadeInDown">News</a>
-        <a class="item animated fadeInDown">Contact</a>
-      </div>
+  <!--Main header pf the page-->
+  <div class="header-grid">
+    <img class="animated fadeInLeft" src="/images/logo-003.jpg">
+    <div class="menu-grid animated fadeInDown">
+      <a class="navbar-item" href="/index.html" href="/buy-kitchen.html" id="current-page">A1 Kitchens</a>
+      <a class="navbar-item" href="/about-us.html">About Us</a>
+      <a class="navbar-item" href="/kitchen-range.html"> Kitchen Range</a>
+      <a class="navbar-item" href="/our-installations.html">Our Installations</a>
+      <a class="navbar-item" href="/buy-kitchen.html">Buy My Kitchen</a>
+      <a class="navbar-item" href="/news-page-1.html">News</a>
+      <a class="navbar-item" href="/contact.html">Contact</a>
     </div>
 
-    <!--Here goes the title of website and the orange button-->
-    <div class="d-flex container align-items-center justify-content-end">
-      <div>
-        <p class="section-heading animated zoomIn">A1 Kitchens</p>
-      </div>
-
-      <div class="container animated fadeInRight">
-        <button class="btn btn-lg btn-warning">Book My Kitchen Design</button>
-        <button class="btn btn-lg btn-primary animated bounceIn">0123456789</button>
-      </div>
+    <header class="section-heading animated zoomIn">A1 Kitchens</header>
+    <div class="animated fadeInRight">
+      <button class="btn btn-lg btn-warning">Book My Design</button>
+      <button class="btn btn-lg btn-info">0123456789</button>
     </div>
-
   </div>
-  <!--Section 1 has been completed-->
 
   <!--Section 2 starting here-->
   <div class="section-2">
-    <header class="text-uppercase page-title text-center text-white">Quality Bespoke Kitchens in Bedford</header>
+    <header class="heading">Quality Bespoke Kitchens in Bedford</header>
     <div class="section-2-grid">
       <p id="para1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem dignissimos atque ducimus temporibus
         magni voluptate saepe, maxime doloremque veritatis perspiciatis, nam dolore rem hic libero soluta obcaecati,
@@ -95,16 +80,19 @@
         cum? Soluta magni fugit expedita?</p>
     </div>
   </div>
+
   <a href="#top"><img class="button" src="/images/up-icon.png" id="upBtn"></a>
   <!--Section 2 has ended now-->
 
   <!--Section 3 having 3 columns will start from here-->
   <div class="container section-3-grid">
+
     <!--Column 1 containing Our Products-->
-    <div class="column-1-grid" data-aos="fade-left">
+    <div class="column-3-grid" data-aos="fade-left">
       <header>Our Products</header>
-      <!--Carousel for OUR PRODUCTS-->
-      <div id="carousel-1" class="carousel slide" data-ride="carousel">
+
+      <!--Carousel for OUR COMPANY-->
+      <div id="carousel-3" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
             <img class="d-block w-100" src="/images/our-product-1.jpg" alt="First slide">
@@ -116,11 +104,11 @@
             <img class="d-block w-100" src="/images/our-product-3.jpg" alt="Third slide">
           </div>
         </div>
-        <a class="carousel-control-prev" href="#carousel-1" role="button" data-slide="prev">
+        <a class="carousel-control-prev" href="#carousel-3" role="button" data-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="sr-only">Previous</span>
         </a>
-        <a class="carousel-control-next" href="#carousel-1" role="button" data-slide="next">
+        <a class="carousel-control-next" href="#carousel-3" role="button" data-slide="next">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="sr-only">Next</span>
         </a>
@@ -150,13 +138,13 @@
           excepturi modi deserunt numquam qui? Dolorem, dicta assumenda! Eos minus culpa neque beatae, tempore
           blanditiis natus itaque labore nemo fugiat laborum repellat adipisci fuga voluptates numquam id praesentium
           laudantium voluptate mollitia pariatur at doloribus. Officia, ipsum!</p>
-      </div>
 
+      </div>
       <div class="text-center">
         <button class="btn btn-lg btn-warning">View Our Products</button>
       </div>
-
     </div>
+
 
     <!--Column 2 containing News-->
     <div class="container">
@@ -259,7 +247,7 @@
       </div>
 
       <div class="text-center">
-        <button class="btn btn-lg btn-warning">View Our Products</button>
+        <button class="btn btn-lg btn-warning">Learn More</button>
       </div>
     </div>
 

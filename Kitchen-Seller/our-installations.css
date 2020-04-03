@@ -25,10 +25,10 @@ body {
   }
 
   .header-grid > img {
-      width: 100%;
-      height: auto;
-      grid-column: 1;
-      grid-row: 1;
+    width: 100%;
+    height: auto;
+    grid-column: 1;
+    grid-row: 1;
   }
 
   .menu-grid{
@@ -54,7 +54,6 @@ body {
       cursor: pointer;
       text-shadow: -1px 0 #030303, 0 1px #000000, 1px 0 #030303, 0 -1px #000000;
       text-decoration: none;
-
   }
 
   #current-page {
@@ -95,7 +94,7 @@ body {
 
 .kitchen-range-gallery {
     display: grid;
-    background-color: chocolate;
+    background-color: #0e77a1 !important;
     grid-template-columns: repeat(3 , 1fr);
     grid-template-rows: 1fr 1fr 1fr 0.5fr;
     width: 100%;
@@ -161,7 +160,7 @@ body {
 }
 
 figure {
-    background-color: black;
+    background-color: chocolate;
     border-radius: 7px;
     
 }

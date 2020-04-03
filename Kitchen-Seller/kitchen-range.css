@@ -94,7 +94,7 @@ body {
 
 .kitchen-range-gallery {
   display: grid;
-  background-color: chocolate;
+  background-color: #0e77a1 !important;
   grid-template-columns: repeat(3 , 1fr);
   grid-template-rows: repeat(6, 1fr);
   width: 100%;
@@ -115,7 +115,7 @@ body {
 }
 
 figure {
-    background-color: black;
+    background-color: chocolate;
     border-radius: 7px;
 
     

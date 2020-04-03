@@ -1,19 +1,32 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
 body {
   /*background-color: #0e77a1 !important;*/
   background-color: grey !important;
   box-sizing: border-box;
+  
 }
 
-.section-1 {
-  background-image: url(/images/top-bg-image.jpg);
-  background-size: cover;
+
+.header-grid{
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: 1fr 1fr;
+  background-image: url('/images/top-bg-image.jpg');
   background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  justify-items: center;
+  align-items: center;
+  height: auto;
   background-attachment: fixed;
-  padding-bottom: 3%;
-  background-position: center;
 }
 
 .section-heading {
+  padding: 2%;
   font-family: 'Titan One', cursive;
   font-size: 4rem;
   color: #ff8c00;
@@ -21,67 +34,67 @@ body {
 
 }
 
-.logo-image {
-    width: 300px;
-    height: auto
+
+.menu-grid{
+  display: grid;
+  grid-template-columns: repeat(7,1fr);
 }
 
-#logo {
-  animation-duration: 1s;
-  animation-delay: 1s;
-  animation-iteration-count: 1;
+
+.navbar-item {
+  font-family: 'Exo 2', sans-serif;
+  font-size: 1.2rem;
+  padding-top: 100%;
+  padding-bottom: 100%;
+  background-color: rgba(255, 140,00, 0.2);
+  text-align: center;
+  text-shadow: -1px 0 #ff8c00, 0 1px #ff8c00, 1px 0 #ff8c00, 0 -1px #ff8c00;
+  color: black;
+
 }
 
-.item {
-    font-family: 'Exo 2', sans-serif;
-    font-size: 1.2rem;
-    padding-top: 70%;
-    padding-bottom: 70%;
-    background-color: rgba(255, 140,00, 0.2);
-    widows: 100px;
-    font-weight: bold;
-    animation-duration: 2s;
-    animation-delay: 2s;
-    text-align: center;
-    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
-}
-
-.item:hover{
-    background-color: rgba(255, 140,00, 0.6);
+.navbar-item:hover {
+    background-color: rgba(255, 140, 0, 0.6);
     color: white !important;
     cursor: pointer;
-    padding-top: 70%;
-    padding-bottom: 70%;
-    text-shadow: -1px 0 #ff8c00, 0 1px #ff8c00, 1px 0 #ff8c00, 0 -1px #ff8c00;
+    text-shadow: -1px 0 #030303, 0 1px #000000, 1px 0 #030303, 0 -1px #000000;
+    text-decoration: none;
+
 }
+
 
 #current-page {
-  background-color: rgba(255, 140,00, 0.6);
+  background-color: rgba(255, 140, 0, 0.6);
 }
 
-.navbar-grid {
-  display: grid;
-  grid-template-columns: repeat(7, 1fr);
-  align-items: center;
+
+.header-grid > img {
+  width: 100%;
+  height: auto;
+  grid-column: 1;
+  grid-row: 1;
 }
 
-.page-title {
+/* Main body styling starts here*/
+
+.heading {
   font-family: 'Lobster', cursive;
   font-size: 4rem;
   text-shadow: -1px 0 black, 0 4px black, 1px 0 black, 0 -1px black;
+  color: white;
   
 }
 
+/* Section 2 is right here */
 .section-2-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 0.5fr;
   font-family: 'Arvo', serif;
   color: white;
 }
 
 #para1 {
- grid-column: 1/3;
-
+ grid-column: 1/4;
 }
 
 #video {
@@ -116,6 +129,9 @@ body {
   cursor: pointer;
 }
 
+
+/* Styling the third section which has the carousels begins here */
+
 .news-heading {
   color: yellow;
   text-shadow: -1px 0 black, 0 4px black, 1px 0 black, 0 -1px black;
@@ -127,29 +143,25 @@ body {
   cursor: pointer;
 }
 
-/* The section below deals with the styling of sections below video on the page*/
-
 .section-3-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   text-align: left;
+  
   font-family: 'Rajdhani', sans-serif;
   color: white;
+  padding: 1% 0;
 }
 
-#carousel-1 {
+#carousel-3 {
   padding-bottom: 3px;
-  height: 100%;
-}
-
-#carousel-1 + div {
-  margin-top: 3px;
 }
 
 .section-3-grid > div:nth-child(odd) {
   background-color: #0e77a1 !important;
   margin-bottom: 3%;
   padding-bottom: 3%;
+  border-radius: 10px;
 }
 
 div > header {
@@ -210,40 +222,4 @@ footer {
 
 .footer-icon:hover {
   cursor: pointer;
-}
-
-@media only screen and (max-width: 1345px) {
-  .navbar-grid {
-    display: grid;
-    grid-template-columns: repeat(7,0.5fr);
-    grid-area: auto;
-    column-gap: 1%;
-  }
-
-  .logo-image {
-    margin-left: 3%;
-    margin-top: 20%;
-    width: 80%;
-  }
-
-  .item {
-    padding: 1%;
-    width: 100%;
-    background: none;
-  }
-
-  .item:hover{
-    background: none;
-  }
-
-  #current-page{
-    width: 100%;
-    background-color: #ff8c00;
-  }
-
-  .section-1 {
-    width: 100%;
-    height: 90vh;
-  }
-
 }
