@@ -37,7 +37,7 @@ body {
 
 .menu-grid{
   display: grid;
-  grid-template-columns: repeat(7,1fr);
+  grid-template-columns: repeat(6,1fr);
 }
 
 
@@ -125,6 +125,7 @@ body {
   opacity: 50%;
   left: 0;
   padding: 5px;
+  z-index: 1;
 }
 
 .button:hover {
