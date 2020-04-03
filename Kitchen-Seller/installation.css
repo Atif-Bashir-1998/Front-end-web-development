@@ -10,33 +10,38 @@ body {
     
   }
 
+
   .header-grid{
-      display: grid;
-      grid-template-columns: 1fr 3fr;
-      grid-template-rows: 1fr 1fr;
-      background-image: url(/images/top-bg-image.jpg);
-      background-repeat: no-repeat;
-      background-size: cover;
-      width: 100%;
-      justify-items: center;
-      align-items: center;
-      height: auto;
-      background-attachment: fixed;
-  }
-
-  .header-grid > img {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr 1fr;
+    background-image: url('/images/top-bg-image.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
     width: 100%;
+    justify-items: center;
+    align-items: center;
     height: auto;
-    grid-column: 1;
-    grid-row: 1;
+    background-attachment: fixed;
+}
+
+.section-heading {
+    padding: 2%;
+    font-family: 'Titan One', cursive;
+    font-size: 4rem;
+    color: #ff8c00;
+    text-shadow: -1px 0 black, 0 4px black, 1px 0 black, 0 -1px black;
+  
   }
 
+  
   .menu-grid{
-      display: grid;
-      grid-template-columns: repeat(7,1fr);
-  }
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+}
 
-  .navbar-item {
+
+.navbar-item {
     font-family: 'Exo 2', sans-serif;
     font-size: 1.2rem;
     padding-top: 100%;
@@ -54,35 +59,33 @@ body {
       cursor: pointer;
       text-shadow: -1px 0 #030303, 0 1px #000000, 1px 0 #030303, 0 -1px #000000;
       text-decoration: none;
+
   }
 
-  #current-page {
-      background-color: rgba(255, 140, 0, 0.6);
-  }
-
-  .section-heading {
-    padding: 2%;
-    font-family: 'Titan One', cursive;
-    font-size: 4rem;
-    color: #ff8c00;
-    text-shadow: -1px 0 black, 0 4px black, 1px 0 black, 0 -1px black;
   
-  }
+  #current-page {
+    background-color: rgba(255, 140, 0, 0.6);
+}
 
-  /* Main body will be below this */
-  .main-body{
-      margin: 3% 0;;
-      
-  }
 
-  .heading {
+.header-grid > img {
+    width: 100%;
+    height: auto;
+    grid-column: 1;
+    grid-row: 1;
+}
+
+
+/*Styling of main body */
+
+
+.heading {
     font-family: 'Lobster', cursive;
     font-size: 4rem;
     text-shadow: -1px 0 black, 0 4px black, 1px 0 black, 0 -1px black;
     color: white;
     
   }
-
 
   .sub-heading {
     font-family: 'Righteous', cursive;
@@ -91,8 +94,14 @@ body {
     text-shadow: -1px 0 black, 0 4px black, 1px 0 black, 0 -1px black;
 
 }
+  
+  .mainbody-paragraphs {
+    font-family: 'Arvo', serif;
+    color: white;
+  }
 
-.kitchen-range-gallery {
+
+  .kitchen-range-gallery {
     display: grid;
     background-color: #0e77a1 !important;
     grid-template-columns: repeat(3 , 1fr);
@@ -107,12 +116,14 @@ body {
     overflow-y: hidden;
 }
 
+
 .kitchen-range-images {
     width: 100%;
     height: auto;
     margin-top: 2%;
     padding: 0 2%;
 }
+
 
 #1 {
     grid-row: 1;
@@ -175,32 +186,28 @@ figcaption {
     margin: 2% 2%;
 }
 
-  .mainbody-paragraphs {
-    font-family: 'Arvo', serif;
-    color: white;
-  }
+/* Testimonial and charity section down here */
+.testimonial-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    column-gap: 2%;
+}
 
-  .testimonial-grid{
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: repeat(3, 1fr);
-      column-gap: 2%;
-  }
+.testi-image {
+    width: 100%;
+    padding: 2%;
+}
 
-  .testi-image {
-      width: 100%;
-      padding: 2%;
-  }
-
-  .quote {
-    display: block;
-    font-style: italic;
-    font-weight: bold;
-    font-size: larger;
-    color: black;
-    background-color: darkgray;
-    background-size: auto;
-    text-align: center;
+.quote {
+  display: block;
+  font-style: italic;
+  font-weight: bold;
+  font-size: larger;
+  color: black;
+  background-color: darkgray;
+  background-size: auto;
+  text-align: center;
 }
 
 .charity-image-grid {
@@ -214,6 +221,7 @@ figcaption {
 .image {
     width: 70%;
 }
+
   /*Footer styling here */
   .footer-icon {
     width: 50px;
@@ -232,4 +240,14 @@ figcaption {
     color: #ff8c00;
     font-size: x-large;
     text-align: center;
+  }
+
+  .button {
+    width: 70px;
+    height: 70px;
+    position: sticky;
+    top: 0;
+    opacity: 50%;
+    left: 0;
+    padding: 5px;
   }
