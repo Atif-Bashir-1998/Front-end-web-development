@@ -44,6 +44,7 @@ body {
     background-color: rgba(255, 140,00, 0.2);
     text-align: center;
     text-shadow: -1px 0 #ff8c00, 0 1px #ff8c00, 1px 0 #ff8c00, 0 -1px #ff8c00;
+    color: black;
 
   }
 
@@ -52,6 +53,7 @@ body {
       color: white !important;
       cursor: pointer;
       text-shadow: -1px 0 #030303, 0 1px #000000, 1px 0 #030303, 0 -1px #000000;
+      text-decoration: none;
 
   }
 
@@ -91,17 +93,18 @@ body {
 }
 
 .kitchen-range-gallery {
-    display: grid;
-    background-color: chocolate;
-    grid-template-columns: repeat(3 , 1fr);
-    grid-template-rows: repeat(5, 1fr);
-    width: 100%;
-    box-shadow:0 10px black, 10px 0 black;
-    overflow-y: auto;
-    column-gap: 3%;
-    row-gap: 4%;
-    padding: 5% 0;
-    border-radius: 15px;
+  display: grid;
+  background-color: chocolate;
+  grid-template-columns: repeat(3 , 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  width: 100%;
+  box-shadow:0 10px black, 10px 0 black;
+  column-gap: 3%;
+  row-gap: 4%;
+  padding: 2% 0;
+  border-radius: 15px;
+  height: 100%;
+  overflow-y: hidden;
 }
 
 .kitchen-range-images {
@@ -114,6 +117,7 @@ body {
 figure {
     background-color: black;
     border-radius: 7px;
+
     
 }
 

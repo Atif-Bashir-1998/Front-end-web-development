@@ -44,6 +44,7 @@ body {
     background-color: rgba(255, 140,00, 0.2);
     text-align: center;
     text-shadow: -1px 0 #ff8c00, 0 1px #ff8c00, 1px 0 #ff8c00, 0 -1px #ff8c00;
+    color: black;
 
   }
 
@@ -52,6 +53,7 @@ body {
       color: white !important;
       cursor: pointer;
       text-shadow: -1px 0 #030303, 0 1px #000000, 1px 0 #030303, 0 -1px #000000;
+      text-decoration: none;
 
   }
 
@@ -95,7 +97,7 @@ body {
     display: grid;
     background-color: chocolate;
     grid-template-columns: repeat(3 , 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: 1fr 1fr 1fr 0.5fr;
     width: 100%;
     box-shadow:0 10px black, 10px 0 black;
     column-gap: 3%;
