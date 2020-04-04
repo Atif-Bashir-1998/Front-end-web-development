@@ -209,7 +209,7 @@ body {
   }
 
   .header-grid > img {
-    width: 80%;
+    width: 100%;
     margin: 2%;
     height: auto;
     grid-column: 1;
