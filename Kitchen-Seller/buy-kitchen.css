@@ -247,16 +247,7 @@ figcaption {
   padding: 2%;
 }
 
-.quote {
-display: block;
-font-style: italic;
-font-weight: bold;
-font-size: larger;
-color: black;
-background-color: darkgray;
-background-size: auto;
-text-align: center;
-}
+.quote {display: block;font-style: italic;font-weight: bold;font-size: larger;color: black;background-color: darkgray;background-size: auto;text-align: center;/* padding: 3%; */}
 
 .charity-image-grid {
   display: grid;
@@ -318,4 +309,43 @@ text-align: center;
   padding: 1%;
 }
 
+.kitchen-range-gallery {
+  display: grid;
+  background-color: #0e77a1 !important;
+  grid-template-columns: repeat(2 , 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  width: 100%;
+  box-shadow:0 10px black, 10px 0 black;
+  column-gap: 1%;
+  row-gap: 1%;
+  padding: 2% 0;
+  border-radius: 15px;
+  height: 100%;
+  overflow-y: hidden;
+}
+
+
+.testimonial-grid{
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: repeat(8, auto);
+
+}
+
+.main-body {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+
+.testi-image {
+  width: 70%;
+  padding: 2%;
+}
+.quote {
+  font-size: 1.2rem;
+  width: 100%;
+  overflow: hidden;
+}
 }
