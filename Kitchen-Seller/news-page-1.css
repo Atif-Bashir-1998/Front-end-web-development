@@ -175,3 +175,60 @@ body {
     padding: 5px;
     z-index: 1;
   }
+
+  /* Media queries will be here */
+  @media only screen and (max-width: 962px) {
+    .header-grid{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      justify-items: center;
+      align-items: center;
+      height: auto;
+      background-attachment: fixed;
+  }
+
+
+    .menu-grid{
+      grid-column-start: 2;
+      grid-row-start: 1;
+      grid-row-end: 3;
+      display: flex;
+      flex-direction: column;
+  }
+
+  .navbar-item {
+    font-family: 'Exo 2', sans-serif;
+    font-size: 1.2rem;
+    background-color: rgba(255, 140,00, 0.2);
+    text-align: center;
+    padding: 2%;
+    margin: 1%;
+    text-shadow: -1px 0 #ff8c00, 0 1px #ff8c00, 1px 0 #ff8c00, 0 -1px #ff8c00;
+    color: black;
+  }
+
+  .header-grid > img {
+    width: 80%;
+    margin: 2%;
+    height: auto;
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.bookingButtons {
+  grid-row: 3;
+  grid-column: 2;
+  padding: 1%;
+}
+
+  .sidebar {
+    grid-column: 1/3;
+    grid-row: 1;
+  }
+
+  .news-grid {
+    grid-column: 1/3;
+  }
+
+  }
